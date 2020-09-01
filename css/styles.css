@@ -57,6 +57,14 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.tweets {
+  margin-bottom: 50px;
+}
+
+.container {
+  text-align: center;
+}
+
 article,
 aside,
 figcaption,
