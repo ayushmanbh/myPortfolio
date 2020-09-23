@@ -3,14 +3,14 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
     */
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -40,3 +40,39 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+var button = document.getElementById("theme-toggle");
+var icon = document.querySelector(".btn-icon")
+let darkMode = localStorage.getItem('darkmode')
+
+const enableDarkMode = () => {
+    document.documentElement.classList.toggle('dark-mode')
+    document.querySelectorAll('.inverted').forEach((result) => {
+        result.classList.toggle('invert')
+    })
+    localStorage.setItem('darkmode', 'enabled')
+    icon.innerHTML = "🌞"
+}
+
+const disableDarkMode = () => {
+    document.documentElement.classList.remove('dark-mode')
+    document.querySelectorAll('.inverted').forEach((result) => {
+        result.classList.remove('invert')
+    })
+    localStorage.setItem('darkmode', null)
+    icon.innerHTML = "🌜"
+}
+
+if (darkMode === 'enabled') {
+    enableDarkMode()
+}
+
+button.addEventListener('click', function () {
+    darkMode = localStorage.getItem('darkmode')
+    if (darkMode !== 'enabled') {
+        enableDarkMode()
+    } else {
+        disableDarkMode()
+    }
+
+}, false);

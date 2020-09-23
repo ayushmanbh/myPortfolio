@@ -36,7 +36,7 @@
       id="sideNav"
     >
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none"><img
+        <span class="d-block d-lg-none inverted"><img
           class="img-fluid rounded-circle mw-100 h-auto mr-1"
           width="50"
           height="50"
@@ -45,13 +45,13 @@
       /> Ayushman Bhardwaj</span>
         <span class="d-none d-lg-block"
           ><img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            class="img-fluid img-profile rounded-circle mx-auto mb-2 inverted"
             src="assets/img/profile.jpeg"
             alt=""
         /></span>
       </a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler inverted"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -64,35 +64,38 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger inverted" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"
+            <a class="nav-link js-scroll-trigger inverted" href="#experience"
               >Experience</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
+            <a class="nav-link js-scroll-trigger inverted" href="#education"
               >Education</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger inverted" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Projects</a>
+            <a class="nav-link js-scroll-trigger inverted" href="#interests">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Training & Certifications</a>
+            <a class="nav-link js-scroll-trigger inverted" href="#awards">Training & Certifications</a>
           </li>
+          <li class="nav-item"><button type="button" name="dark_light" id="theme-toggle" class="btn btn-dark" title="Toggle dark/light mode"><span class="btn-icon inverted">🌜</span></button></li>
         </ul>
       </div>
     </nav>
+    
+    
     <!-- Page Content-->
     <div class="container-fluid p-0">
       <!-- About-->
       <section class="resume-section" id="about">
-        <div class="resume-section-content">
+        <div class="resume-section-content"> 
           <h1 class="mb-0">
             Ayushman
             <span class="text-primary">Bhardwaj</span>
@@ -101,12 +104,12 @@
             <i class="fas fa-map-marker-alt"></i> Rajasthan, India · <i class="fas fa-phone-alt"></i> (+91) 7976571833·
             <i class="fas fa-envelope"></i> <a href="mailto:name@email.com">ayushmanbhardwaj3@gmail.com</a>
           </div>
-          <p class="lead">
+          <p class="lead inverted">
             Hi there 🙋‍♂️, I am a Computer Science Graduate 👨‍🎓. I completed my Bachelors from University of Petroleum and Energy Studies 🏫, Dehradun ⛰, India. I love to build Responsive 🖥📐, Fast ⚡, Intuitive 🤝, Dynamic 🔁 and Secure 🔐 Web 🌏 and Mobile 📱 apps. Recently I've worked with a startup to build an interactive platform for Schools to better communicate with students 👦 and parents 👪. Currently I am learning agile methodology to develop simple component based or moduler applications following a component design specification using MVC principles. I am always eager to grab opportunities and brush up my skills 📚 through dedication and good spirit. I strive to become a better developer 💻 and a better human being in general 🤩.</p>
             <p class="lead mb-5">
             Outside of my work hours i love to play games 🎮🏸🏏🏐💪 , watch movies🎬 and read about Technology💻🧬🧪 and Space🪐🌌🚀🛸
           </p>
-          <div class="social-icons">
+          <div class="social-icons inverted">
             <a
               class="social-icon"
               href="https://www.linkedin.com/in/ayushman-bhardwaj/"
@@ -321,7 +324,7 @@
           <div class="row row-cols-1 row-cols-md-3">
             <div class="col mb-4">
               <div class="card h-100">
-                <img src="assets/img/chatroom.png" width="309" height="207" class="card-img-top" alt="...">
+                <img src="assets/img/chatroom.png" width="309" height="207" class="card-img-top inverted" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Chat Rooms</h5>
                   <p class="card-text">Basic lightweight Real-time chat app using <a href="https://socket.io/" target="_blank">socket.io</a></p>
@@ -336,7 +339,7 @@
             </div>
             <div class="col mb-4">
               <div class="card h-100">
-                <img src="assets/img/weather.PNG" width="309" height="207" class="card-img-top" alt="...">
+                <img src="assets/img/weather.PNG" width="309" height="207" class="card-img-top inverted" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Weather Service</h5>
                   <p class="card-text">A Weather Service to serve real-time weather forecast for given location using <a href="https://weatherstack.com/" target="_blank">weatherstack API</a></p>
@@ -351,7 +354,7 @@
             </div>
             <div class="col mb-4">
               <div class="card h-100">
-                <img src="assets/img/task.PNG" width="309" height="207" class="card-img-top" alt="...">
+                <img src="assets/img/task.PNG" width="309" height="207" class="card-img-top inverted" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Task Manager API</h5>
                   <p class="card-text">Task Manager API to manage tasks (To-Do lists) in Node.js & Express used mongoose, jsonwebtoken, jest for testing</p>
@@ -411,8 +414,11 @@
       <hr class="m-0" />
       <section class="resume-section"> 
         <div class="resume-section-content">   
-          <h2 class="mb-5">Check out my latest tweets  <span><a href="https://twitter.com/ashbh_dhp14?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @ashbh_dhp14</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span></h2>      
-          <a class="twitter-timeline" data-width="500" data-height="575" href="https://twitter.com/ashbh_dhp14?ref_src=twsrc%5Etfw">Tweets by ashbh_dhp14</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <h2 class="mb-5">Check out my latest tweets  <span class="inverted"><a href="https://twitter.com/ashbh_dhp14?ref_src=twsrc%5Etfw" class="twitter-follow-button " data-size="large" data-show-screen-name="false" data-show-count="false">Follow @ashbh_dhp14</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span></h2> 
+          <div class="inverted">
+            <a class="twitter-timeline" data-width="500" data-height="575" href="https://twitter.com/ashbh_dhp14?ref_src=twsrc%5Etfw">Tweets by ashbh_dhp14</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>     
+          
         </div>
       </section>
     </div>
