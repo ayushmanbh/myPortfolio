@@ -10573,3 +10573,10 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+#theme-toggle {
+  border: hidden;
+  cursor: pointer;
+  outline: none;
+  width: 50px;
+}

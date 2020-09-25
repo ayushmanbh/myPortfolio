@@ -52,6 +52,8 @@ const enableDarkMode = () => {
     })
     localStorage.setItem('darkmode', 'enabled')
     icon.innerHTML = "🌞"
+    button.classList.replace('btn-dark', 'btn-light')
+    // button.classList.add('btn-light')
 }
 
 const disableDarkMode = () => {
@@ -61,6 +63,10 @@ const disableDarkMode = () => {
     })
     localStorage.setItem('darkmode', null)
     icon.innerHTML = "🌜"
+    button.classList.replace('btn-light', 'btn-dark')
+
+    // button.classList.remove('btn-light')
+    // button.classList.add('btn-dark')
 }
 
 if (darkMode === 'enabled') {
